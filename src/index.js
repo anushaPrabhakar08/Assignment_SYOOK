@@ -43,3 +43,43 @@ function save_row(no) {
 function delete_row(no) {
     document.getElementById("row" + no + "").outerHTML = "";
 }
+
+function add() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("newTitle").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+        alert("You must write something!");
+    } else {
+        document.getElementById("list").appendChild(li);
+    }
+}
+
+function addnewNote() {
+    var newTitle = document.getElementById("newTitle").value;
+    var newDescription = document.getElementById("newDescription").value;
+
+    var table = document.getElementById("list");
+    //console.log(table)//length
+    var table_len = table.getElementsByTagName("li").length + 1;
+    console.log(table_len)
+
+    var row = document.createElement('list');
+    row.innerHTML = "<li class='list-note' id='row" + table_len + "'>"
+        + "<div class='list-note-left-box'>"
+        + "<img id='imgrow1' src='./Assets/images/messageicon.png' class='list-note-icon' alt='icon' />"
+        + "</div>"
+        + "<div class='list-note-right-box' id='row" + table_len + "'>"
+        + "<div class='list-note-title' id='titlerow" + table_len + "'>" + newTitle + "</div>"
+        + "<div class='list-note-description 'id='descriptionrow" + table_len + "'>" + newDescription + "</div>"
+        + "<div><input type='button' id='edit_button" + table_len + "' value='Edit' class='list-note-app-button' onclick='edit_row(" + table_len + ")'>"
+        + "<input type='button' id='save_button" + table_len + "' value='Save' class='list-note-app-button' onclick='save_row(" + table_len + ")'>"
+        + "<input type='button' value='Delete' class='list-note-app-button' onclick='delete_row(" + table_len + ")'></div></div></li>";
+
+    table.appendChild(row);
+
+    document.getElementById("newTitle").value = "";
+    document.getElementById("newDescription").value = "";
+
+}
