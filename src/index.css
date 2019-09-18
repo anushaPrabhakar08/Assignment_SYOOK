@@ -13,16 +13,31 @@ body {
 }
 
 .inputclass{
+    cursor: pointer;
     padding:0px 12px;
-	font-size:14px;
-	color: azure;
-	background:fixed;
-	outline:none;
+    font-size:14px;
+    color: azure;
+    background:fixed;
+    outline:none;
     display:inline-block;
     height:32px;
-	border-radius:4px;
+  	border-radius:4px;
     border:1px solid #CAC9C7;   
     width: 285px;
+    padding-right: 32px;
+}
+.searchclass {
+    cursor: pointer;
+    padding: 0px 12px;
+    font-size: 14px;
+    color: azure;
+    background: fixed;
+    outline: none;
+    display: inline-block;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #CAC9C7;
+    width: 360px;
     padding-right: 32px;
 }
 
