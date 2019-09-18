@@ -11,9 +11,16 @@ body {
 .mainclass{
     padding: 25px;
 }
+#errormsg {
+  text-align: left;
+    margin: 4px;
+    color: red;
+}
+.submitbutton {
+  width: 330px !important;
+}
 
 .inputclass{
-    cursor: pointer;
     padding:0px 12px;
     font-size:14px;
     color: azure;
@@ -27,10 +34,8 @@ body {
     padding-right: 32px;
 }
 .searchclass {
-    cursor: pointer;
     padding: 0px 12px;
     font-size: 14px;
-    color: azure;
     background: fixed;
     outline: none;
     display: inline-block;
