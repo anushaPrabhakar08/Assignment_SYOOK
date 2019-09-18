@@ -2,7 +2,6 @@ body {
     display: block;
     text-align: -webkit-center;
 }
-/*---------------styles for form-------------------------*/
 .formclass{
   background: url(./Assets/images/backgroundimg.jpg) no-repeat;
     width: fit-content;
@@ -34,3 +33,74 @@ body {
     padding-top: 10px;
     height: 200px;
 }
+
+.list {
+  display: table-caption;
+}
+
+.list-note-app-button {
+  /*height: 1.75rem; */
+    width: 6.25rem;
+    outline: none;
+    background-color: transparent;
+    /* color: #fff; */
+    /* border-radius: 1.25rem; */
+    border: none;
+    font-size: 1rem;
+}
+
+.list-note {
+    display: inline-flex;
+    align-items: center;
+    width: 25rem;
+    /*height: 8.125rem;*/
+    margin: 1.25rem 1rem 0rem 0rem;
+    border-bottom: 0.0625rem #ccc solid;
+    padding-bottom: 1.563rem;
+  }
+
+  .list-note-left-box {
+    height: 100%;
+  }
+  .list-note-right-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  
+  .list-note-title {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  
+  
+  .list-note-description {
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    height: 1rem;
+  }
+  .list-note-button {
+    width: 100%;
+  }
+  .list-note-icon {
+    display: flex;
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 0.25rem;
+  }
+  
+
+@media only screen and (max-width: 500px) {
+    .mainclass,
+    .inputclass
+     {
+      width: 180px;  
+    }
+    .formclass{
+      width: 400px
+    }
+
+  }

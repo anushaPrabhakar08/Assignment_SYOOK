@@ -10,24 +10,91 @@
 </head>
 
 <body>
-    <form class="formclass" id="formdata" action="">
-        <div class="mainclass">
+    <div id="formdata">
+        <form class="formclass" action="">
+          <div class="mainclass">
     
-          <div class="title">
-            <input class="inputclass" type="text" id="newTitle" name="title" placeholder="TITLE">
+            <div class="title">
+              <input class="inputclass" type="text" id="newTitle" name="title" placeholder="TITLE">
+            </div>
+    
+            <div class="description">
+              <textarea class="inputclass inputDescription" id="newDescription" type="text" name="description"
+                placeholder="DESCRIPTION"></textarea>
+            </div>
+    
+            <div class="submit">
+              <input class="inputclass" type="button" onclick="addnewNote()" value="Submit">
+            </div>
+    
           </div>
+        </form>
     
-          <div class="description">
-            <textarea class="inputclass inputDescription" id="newDescription" type="text" name="description"
-              placeholder="DESCRIPTION"></textarea>
-          </div>
+        <ul class="list">
+          <li class="list-note" id="row1">
+            <div class="list-note-left-box">
+              <img id="imgrow1" src="./Assets/images/messageicon.png" class="list-note-icon" alt="icon" />
+            </div>
     
-          <div class="submit">
-            <input class="inputclass" type="submit" onclick="addnewNote()" value="Submit">
-          </div>
+            <div class="list-note-right-box">
+              <div class="list-note-title" id="titlerow1">1st Title </div>
+              <div class="list-note-description" id="descriptionrow1">1st Note </div>
+              <div class="list-note-button">
+                <button class="list-note-app-button" id="edit_button1" value="Edit" onClick="edit_row('1')">
+                  Edit
+                </button>
+                <button class="list-note-app-button" id="save_button1" value="save" onClick="save_row('1')">
+                  Save
+                </button>
+                <button class="list-note-app-button" value="delete" onClick="delete_row('1')">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="list-note" id="row2">
+            <div class="list-note-left-box">
+              <img src="./Assets/images/messageicon.png" class="list-note-icon" alt="icon" />
+            </div>
     
-        </div>
-      </form>
+            <div class="list-note-right-box">
+              <div class="list-note-title" id="titlerow2">2nd Title </div>
+              <div class="list-note-description" id="descriptionrow2">2nd Note </div>
+              <div class="list-note-button">
+                <button class="list-note-app-button" id="edit_button2" value="Edit" onClick="edit_row('2')">
+                  Edit
+                </button>
+                <button class="list-note-app-button" id="save_button2" value="save" onClick="save_row('2')">
+                  Save
+                </button>
+                <button class="list-note-app-button" value="delete" onClick="delete_row('2')">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="list-note" id="row3">
+            <div class="list-note-left-box">
+              <img src="./Assets/images/messageicon.png" class="list-note-icon" alt="icon" />
+            </div>
+    
+            <div class="list-note-right-box">
+              <div class="list-note-title" id="titlerow3">3rd Title </div>
+              <div class="list-note-description" id="descriptionrow3"> 3rd note</div>
+              <div class="list-note-button">
+                <button class="list-note-app-button" id="edit_button3" value="Edit" onClick="edit_row('3')">
+                  Edit
+                </button>
+                <button class="list-note-app-button" id="save_button3" value="save" onClick="save_row('3')">
+                  Save
+                </button>
+                <button class="list-note-app-button" value="delete" onClick="delete_row('3')">
+                  Delete
+                </button> </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     
 </body>
 
