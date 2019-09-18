@@ -1,0 +1,36 @@
+body {
+    display: block;
+    text-align: -webkit-center;
+}
+/*---------------styles for form-------------------------*/
+.formclass{
+  background: url(./Assets/images/backgroundimg.jpg) no-repeat;
+    width: fit-content;
+    
+}
+
+.mainclass{
+    padding: 25px;
+}
+
+.inputclass{
+    padding:0px 12px;
+	font-size:14px;
+	color: azure;
+	background:fixed;
+	outline:none;
+    display:inline-block;
+    height:32px;
+	border-radius:4px;
+    border:1px solid #CAC9C7;   
+    width: 285px;
+    padding-right: 32px;
+}
+
+.title, .description, .submit{
+    margin: 16px;
+}
+.inputDescription{
+    padding-top: 10px;
+    height: 200px;
+}
