@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="180" viewBox="0 0 150 180">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.482" y1="-0.395" x2="0.483" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b5e3ff"/>
+      <stop offset="1" stop-color="#a7aaff"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect width="127" height="135" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Dart" transform="translate(-56 -471)">
+    <rect id="Rectangle_1047" data-name="Rectangle 1047" width="150" height="180" rx="10" transform="translate(56 471)" fill="url(#linear-gradient)"/>
+    <g id="Repeat_Grid_4" data-name="Repeat Grid 4" transform="translate(79 516)" clip-path="url(#clip-path)">
+      <g transform="translate(-79 -516)">
+        <circle id="Ellipse_15" data-name="Ellipse 15" cx="7" cy="7" r="7" transform="translate(122 522)" fill="#fff"/>
+        <circle id="Ellipse_20" data-name="Ellipse 20" cx="1" cy="1" r="1" transform="translate(168 543)" fill="#fff"/>
+        <g id="Rectangle_1049" data-name="Rectangle 1049" transform="matrix(0.839, -0.545, 0.545, 0.839, 105.368, 616.475)" fill="none" stroke="#fff" stroke-width="10">
+          <rect width="92" height="92" rx="33" stroke="none"/>
+          <rect x="5" y="5" width="82" height="82" rx="28" fill="none"/>
+        </g>
+        <g id="Polygon_2" data-name="Polygon 2" transform="translate(98 544)" fill="none">
+          <path d="M22.253,0l8.5,6.111L34,16l-3.247,9.889L22.253,32H11.747l-8.5-6.111L0,16,3.247,6.111,11.747,0Z" stroke="none"/>
+          <path d="M 13.35761642456055 5 L 7.488803863525391 9.219640731811523 L 5.262607574462891 16 L 7.488803863525391 22.78035354614258 L 13.35761451721191 27 L 20.64238739013672 27 L 26.51119613647461 22.78035354614258 L 28.73739242553711 16 L 26.51119613647461 9.219646453857422 L 20.64238739013672 5 L 13.35761642456055 5 M 11.7467098236084 0 L 22.2532901763916 0 L 30.7532901763916 6.111459732055664 L 34 16 L 30.7532901763916 25.88854026794434 L 22.2532901763916 32 L 11.7467098236084 32 L 3.246709823608398 25.88854026794434 L 0 16 L 3.246709823608398 6.1114501953125 L 11.7467098236084 0 Z" stroke="none" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
