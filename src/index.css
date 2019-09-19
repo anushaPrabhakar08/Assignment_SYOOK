@@ -9,49 +9,49 @@ body {
 }
 
 .mainclass{
-    padding: 25px;
+    padding: 1.5625rem;
 }
 #errormsg {
   text-align: left;
-    margin: 4px;
+    margin: 0.25rem;
     color: red;
 }
 .submitbutton {
-  width: 330px !important;
+  width: 20.625rem !important;
 }
 
 .inputclass{
-    padding:0px 12px;
-    font-size:14px;
+    padding:0px 0.75rem;
+    font-size:0.875rem;
     color: azure;
     background:fixed;
     outline:none;
     display:inline-block;
-    height:32px;
-  	border-radius:4px;
+    height:2rem;
+  	border-radius:0.25rem;
     border:1px solid #CAC9C7;   
-    width: 285px;
-    padding-right: 32px;
+    width: 17.8125rem;
+    padding-right: 2rem;
 }
 .searchclass {
-    padding: 0px 12px;
-    font-size: 14px;
+    padding: 0px 0.75rem;
+    font-size: 0.875rem;
     background: fixed;
     outline: none;
     display: inline-block;
-    height: 32px;
-    border-radius: 4px;
+    height: 2rem;
+    border-radius: 0.25rem;
     border: 1px solid #CAC9C7;
-    width: 360px;
-    padding-right: 32px;
+    width: 22.5rem;
+    padding-right: 2rem;
 }
 
 .title, .description, .submit{
-    margin: 16px;
+    margin: 1rem;
 }
 .inputDescription{
-    padding-top: 10px;
-    height: 200px;
+    padding-top: 0.625rem;
+    height: 12.5rem;
 }
 
 .list {
@@ -60,13 +60,13 @@ body {
 
 .list-note-app-button {
   /*height: 1.75rem; */
-    width: 6.25rem;
+    /* width: 6.25rem; */
     outline: none;
     background-color: transparent;
     /* color: #fff; */
     /* border-radius: 1.25rem; */
     border: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .list-note {
@@ -94,8 +94,6 @@ body {
     margin-bottom: 0.5rem;
     font-weight: bold;
   }
-
-  
   
   .list-note-description {
     margin-bottom: 0.75rem;
@@ -104,6 +102,9 @@ body {
   }
   .list-note-button {
     width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-block-size: -webkit-fill-available;
   }
   .list-note-icon {
     display: flex;
@@ -113,14 +114,34 @@ body {
   }
   
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
     .mainclass,
     .inputclass
      {
       width: 180px;  
     }
+    .submitbutton {
+      width: 225px !important
+    }
     .formclass{
       width: 400px
     }
 
-  }
+  } */
+  @media only screen and (max-width: 600px) {
+    .formclass{width: -webkit-fill-available !important;}
+    .title{}
+    .inputclass,.submitbutton{width: -webkit-fill-available !important;}
+    .list-note{
+      display:flex !important;
+      justify-content: initial !important;
+      padding-left: 12px;
+      width: -webkit-fill-available !important;
+    }
+    .list{ display: unset;}
+    .searchclass{width: -webkit-fill-available !important;}
+    .list{width: 100% !important;}
+    .list-note-app-button{
+      /* width: max-content; */
+    }
+  } 
