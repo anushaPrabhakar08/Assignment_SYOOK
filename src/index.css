@@ -128,9 +128,8 @@ body {
     }
 
   } */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     .formclass{width: -webkit-fill-available !important;}
-    .title{}
     .inputclass,.submitbutton{width: -webkit-fill-available !important;}
     .list-note{
       display:flex !important;
@@ -141,7 +140,20 @@ body {
     .list{ display: unset;}
     .searchclass{width: -webkit-fill-available !important;}
     .list{width: 100% !important;}
-    .list-note-app-button{
-      /* width: max-content; */
-    }
+    
   } 
+
+  @media only screen and (min-width : 768px) and (max-width : 1024px)  { 
+    .formclass{width: -webkit-fill-available !important;}
+  
+    .inputclass,.submitbutton{width: -webkit-fill-available !important;}
+    .list-note{
+      display:flex !important;
+      justify-content: initial !important;
+      padding-left: 12px;
+      width: -webkit-fill-available !important;
+    }
+    .list{ display: unset;}
+    .searchclass{width: -webkit-fill-available !important;}
+    .list{width: 100% !important;}
+  }
